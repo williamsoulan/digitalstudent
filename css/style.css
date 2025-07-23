@@ -1,0 +1,11 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333333;
+    --link-color: #3b82f6;
+    --buttonbg-color: #e0e0e0;
+    --style-color: #facc15;
+}
+
+body {
+color: var(--text-color);
+}
