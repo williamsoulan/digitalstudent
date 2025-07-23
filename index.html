@@ -3,10 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Student</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="topnav" id="myTopnav">
+        <div class="logo">
+        <img src="assets/images/logoicon.svg" alt="Logo" class="headerlogo">
+        <h1>Digital Student</h1>
+        </div>
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#apprendre">Pourquoi HTML/CSS</a>
+            <a href="#balises">Les balises</a>
+            <a href="#tips">Tips</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </header>
+
+    <section class="intro" id="intro">
+        <h4>Bienvenue sur Digital Student ! Vous trouverez sur ce site diverses informations sur HTML5 et CSS3. Que ce soit l'intérêt d'apprendre HTML/CSS, les balises de base mais aussi des tips et bonnes pratiques !</h4>
+        <img src="assets/images/html.webp" alt="image-html" class="imghtml">
+        <img src="assets/images/css.svg" alt="image-css" class="imgcss">
+    </section>
+
+    <section class="apprendre" id="apprendre">
+        <h2>Pourquoi apprendre HTML/CSS</h2>
+        <p>HTML et CSS sont deux langages relativement simple à comprendre et à utiliser. Ils forment une bonne porte d'entrée vers les langages de programmation. Leur connaissance est indispensable étant donné qu'ils composent la base de tous site web. De plus, la maitrise de HTML et CSS permet de créer des sites web personnalisés et mais surtout, accessible pour tous !</p>
+        <img src="assets/images/htmlcss.webp" alt="image-htmlcss" class="imghtmlcss">
+    </section>
+
+
+    <section class="balises" id="balises">
+        <h2>Les balises</h2>
+        <div class="balise-cont">
+            <h3>&lt;h1&gt;</h3>
+            <p>La balise h1 indique un titre sur un site web. Elle joue un rôle dans le référencement du site. Elle peut être déclinée de 1 à 6 (h1, h2, h3, etc).</p>
+            <h4>Exemple :</h4>
+            <pre><code>&lt;h1&gt;Titre H1&lt;/h1&gt;</code></pre>
+            <h1>Titre H1</h1>
+        </div>
+        <div class="balise-cont">
+            <h3>&lt;p&gt;</h3>
+            <p>La balise p permet de définir un paragraphe.</p>
+            <h4>Exemple :</h4>
+            <pre><code>&lt;p&gt;ceci est un texte normal&lt;/p&gt;</code></pre>
+            <p>ceci est un texte normal</p>
+        </div>
+        <div class="balise-cont">
+            <h3>&lt;a&gt;</h3>
+            <p>La balise a est un élément d'ancrage. Son attribut HREF permet de créer un lien hypertexte vers des pages web, des fichiers, etc.</p>
+            <h4>Exemple :</h4>
+            <pre><code>&lt;a href="#intro"&gt;Introduction&lt;/a&gt;</code></pre>
+            <a href="#intro">Introduction</a>
+        </div>
+        <div class="balise-cont">
+            <h3>&lt;img&gt;</h3>
+            <p>La balise img permet d'intégrer une image.</p>
+            <h4>Exemple :</h4>
+            <pre><code>&lt;img src="assets/images/logoicon.svg"&gt;</code></pre>
+            <img src="assets/images/logoicon.svg" alt="logo icon">
+        </div>
+        <div class="balise-cont">
+            <h3>&lt;ul&gt;</h3>
+            <p>La balise ul permet de créer une liste sans ordre particulier contrairement à la balise ol. ul est souvent représenter avec des puces.</p>
+            <h4>Exemple :</h4>
+            <pre><code>&lt;ul&gt;&lt;li&gt;Liste à puces&lt;/li&gt;&lt;/ul&gt;</code></pre>
+            <ul><li>Liste à puces</li></ul>
+        </div>
+        <div class="balise-cont">
+            <h3>&lt;li&gt;</h3>
+            <p>La balise li permet de représenter un élément dans une liste. Elle est donc contenu dans une balise ul ou ol.</p>
+            <h4>Exemple :</h4>
+            <pre><code>&lt;ul&gt;&lt;li&gt;Élément 1&lt;/li&gt;&lt;li&gt;Élément 2&lt;/li&gt;&lt;li&gt;Élément 3&lt;/li&gt;&lt;/ul&gt;</code></pre>
+            <ul>
+                <li>Liste à puces</li>
+                <ul>
+                    <li>Élement 1</li>
+                    <li>Élement 2</li>
+                    <li>Élement 3</li>
+                </ul>
+            </ul>
+        </div>
+    </section>
+
+    <section class="tips" id="tips">
+        <h2>Tips et bonnes pratiques</h2>
+        <div class="container" id="cont1">
+        <h3>HTML</h3>
+        <ul>
+            <P>Référencement</P>
+            <ul>
+                <li>Mets des mots clés dans tes titres</li>
+                <li>Les sections servent au référencement contrairement aux div</li>
+            </ul>
+            <P>Accessibilité</P>
+            <ul>
+                <li>Utilises un bouton plutôt qu'une div dans un formulaire pour permettre une navigation complète au clavier</li>
+                <li>Utilises l'attribut alt pour décrire tes images, cela permettra de référencer l'image mais aussi de faciliter les personnes mal-voyantes</li>
+                <li>Choisis bien le format de tes média pour optimiser les performances de ta page</li>
+            </ul>
+        </ul>
+        </div>
+        <div class="container" id="cont2">
+        <h3>CSS</h3>
+        <ul>
+            <p>Organisation</p>
+            <ul>
+                <li>Commences ton code par un reset CSS</li>
+                <li>Organises ton CSS de manière cohérente</li>
+                <li>Utilises les sauts de ligne pour aérer ton code</li>
+                <li>Commentes ton code</li>
+                <li>Sépare ta stylesheet en plusieurs partie si tu travailles sur un gros projet</li>
+            </ul>
+        </ul>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Une question ?</h2>
+    <form action="" method="post" class="form">
+    <fieldset>
+    <legend>Nous contacter</legend>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required minlength="2" maxlength="30">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+            
+            <div class="newsl">
+            <label for="newsletter">S'abonner à la newsletter :</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Votre message..." required rows="8"></textarea>
+
+            <div class="button">
+            <button type="submit" class="btn-form">Envoyer</button>
+            <input type="reset" class="btn-reset">
+            </div>
+    </fieldset>
+  </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Digital Student - Tous droits réservés</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/11b0093e02.js" crossorigin="anonymous"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
